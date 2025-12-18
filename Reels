@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JaviceChat Reels</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .reel {
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 10px;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+
+    .reel video {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    button {
+      background: #4f46e5;
+      color: white;
+      border: none;
+      padding: 5px 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 5px;
+    }
+
+    button:hover {
+      background: #4338ca;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>JaviceChat Reels</h1>
+
+    <!-- Reel 1 -->
+    <div class="reel">
+      <p><strong>user1</strong></p>
+      <video controls autoplay muted loop>
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+      </video>
+      <p>Check out this cool clip!</p>
+      <button onclick="likeReel(this)">Like</button>
+    </div>
+
+    <!-- Reel 2 -->
+    <div class="reel">
+      <p><strong>user2</strong></p>
+      <video controls autoplay muted loop>
+        <source src="https://www.w3schools.com/html/movie.mp4" type="video/mp4">
+      </video>
+      <p>My latest reel! 😄</p>
+      <button onclick="likeReel(this)">Like</button>
+    </div>
+
+    <button onclick="goHome()">Home</button>
+  </div>
+
+  <script>
+    function likeReel(button) {
+      alert("You liked this reel!");
+    }
+
+    function goHome() {
+      window.location.href = "ho
