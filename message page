@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JaviceChat Messages</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Messages</h1>
+
+    <div id="chat-window" style="height: 300px; overflow-y: auto; border: 1px solid #ddd; padding: 10px; background: #f9f9f9;"></div>
+
+    <input type="text" id="chat-username" placeholder="Your name" /><br><br>
+    <input type="text" id="chat-message" placeholder="Type a message" />
+    <button onclick="sendMessage()">Send</button>
+    <br><br>
+    <button onclick="goHome()">Home</button>
+  </div>
+
+  <script>
+    function sendMessage() {
+      const
