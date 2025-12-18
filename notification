@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JaviceChat Notifications</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .notification {
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 10px
